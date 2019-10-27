@@ -18,7 +18,6 @@ class CreateStatusTable extends Migration
             $table->integer('id_user')->unsigned();;
             $table->foreign('id_user')->references('id')->on('users');
             $table->string('status');
-            $table->boolean('is_yours');
             $table->timestamps();
         });
     }
